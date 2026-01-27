@@ -3,6 +3,9 @@ Juego similar a Guitar hero
 
 # Cronograma
 
+![MemeHeroDemo](./memeherotake.mp4)
+
+
 ## semana 0, del 10 al 12 de abril
 
 - [x] creacion de repositorio en Github Para trabajar en conjunto
