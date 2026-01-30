@@ -29,7 +29,7 @@ public class Menu extends JFrame{
         setTitle("Meme hero"); // Título de la ventana
         setUndecorated(true);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // Cierra la aplicación al cerrar la ventana
-        setExtendedState(JFrame.MAXIMIZED_BOTH); // Maximiza la ventana al tamaño de la pantalla
+        setExtendedState(JFrame.MAXIMIZED_BOTH);
 
         this.puntaje = new JLabel();
         this.fails = new JLabel();
@@ -45,13 +45,13 @@ public class Menu extends JFrame{
             e.printStackTrace();
         }
 
+      
         // Crear un JLayeredPane para administrar la superposición de paneles
         this.layeredPane = new JLayeredPane();
         this.layeredPane.setPreferredSize(new Dimension(1000, 600));
         this.layeredPane.setLayout(null);
 
         this.videoPanel = new VideoPanel(); // Crea una instancia de VideoPanel
-
 
         // Crear un nuevo juego
         this.juego = new Juego(this);
@@ -90,7 +90,7 @@ public class Menu extends JFrame{
 
         // Añadir layeredPane a la ventana
         add(layeredPane);
-        setVisible(false);
+        //setVisible(false);
         videoPanel.setVisible(false);
         juego.setVisible(false);
         pausaPanel.setVisible(false);
@@ -110,8 +110,11 @@ public class Menu extends JFrame{
         setVisible(true);
         
         
+        // usar gd para maximizar
+        GraphicsDevice gd = GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice();
+        gd.setFullScreenWindow(this);
         resizewindow();
-      
+
 
     }
     public void resizewindow(){
