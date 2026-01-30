@@ -5,6 +5,7 @@ MemeHero is a Guitar Hero–style rhythm game built entirely in Java without Mav
 <p align="center">
   <img src="memeherodemo.gif" alt="MemeHero-Demo" />
 </p>
+
 > [!IMPORTANT]
 > This project is entirely in Spanish. Code, menus, and on-screen instructions are shown only in Spanish.
 
