@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-#!/usr/bin/env bash
 # Ejecuta MemeHero.jar con las mismas opciones que usaste manualmente
 
 set -euo pipefail

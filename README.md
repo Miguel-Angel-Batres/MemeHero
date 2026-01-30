@@ -11,8 +11,6 @@ MemeHero is a Guitar Hero–style rhythm game built entirely in Java without Mav
 
 ---
 
-
-
 ## Features
 
 - Rhythm gameplay inspired by Guitar Hero.
@@ -24,11 +22,19 @@ MemeHero is a Guitar Hero–style rhythm game built entirely in Java without Mav
 ## How to Run
 
 - Linux:
-  - Just execute:
+  - Navigate to the root directory of the project in your terminal and execute:
     ```bash
+    chmod +x run.sh
     ./run.sh
     ```
-  - No extra setup or copying is required. The script uses the JavaFX libraries included with the project.
+  - The script uses the JavaFX libraries included with the project, so no additional setup is required.
+
+- Windows:
+  - Use the `run.bat` script provided in the project root. Double-click the file or execute it in CMD/PowerShell:
+    ```cmd
+    run.bat
+    ```
+  - Alternatively, you can run the `run.sh` script using a compatible shell like Git Bash or WSL (Windows Subsystem for Linux). Ensure you have the necessary environment configured.
 
 - Windows:
   - Use `run.cmd` (if provided) or run via PowerShell/CMD accordingly.
