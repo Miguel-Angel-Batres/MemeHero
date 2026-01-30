@@ -1,61 +1,61 @@
-# MemeHero
+# MemeHero 🎸
 
-MemeHero is a Guitar Hero–style rhythm game built entirely in Java without Maven or Gradle. It ships as a JAR with a launcher script (run.sh) and uses JavaFX libraries.
+A Guitar Hero–style rhythm game built entirely in Java (no Maven/Gradle). Distributed as a JAR with launcher scripts for Linux and Windows, using JavaFX.
 
 <p align="center">
   <img src="memeherodemo.gif" alt="MemeHero-Demo" />
 </p>
 
-> [!IMPORTANT]
-> This project is entirely in Spanish. Code, menus, and on-screen instructions are shown only in Spanish.
+> [!NOTE]
+> The game UI and in‑game text are in Spanish.
+
+> [!CAUTION]
+> Requires Java 17 or newer. Check your version with: `java -version`.
 
 ---
 
-## Features
+## ✨ Features
 
 - Rhythm gameplay inspired by Guitar Hero.
-- JavaFX UI with some Swing integration (JFXPanel).
-- Local resources: images, audio, and fonts bundled with the app.
+- JavaFX UI with a bit of Swing integration (JFXPanel).
+- Local assets: images, audio, and fonts bundled with the app.
 
 ---
 
-## How to Run
+## 🚀 How to Run
 
 - Linux:
-  - Navigate to the root directory of the project in your terminal and execute:
-    ```bash
-    chmod +x run.sh
-    ./run.sh
-    ```
-  - The script uses the JavaFX libraries included with the project, so no additional setup is required.
+  ```bash
+  chmod +x run.sh
+  ./run.sh
+  ```
+  The script uses the JavaFX SDK path configured inside the file. If you prefer the project’s local libraries, edit `MODULE_PATH` to `"$SCRIPT_DIR/lib"`.
 
 - Windows:
-  - Use the `run.bat` script provided in the project root. Double-click the file or execute it in CMD/PowerShell:
+  - Double‑click `run.bat` or run from CMD/PowerShell:
     ```cmd
     run.bat
     ```
-  - Alternatively, you can run the `run.sh` script using a compatible shell like Git Bash or WSL (Windows Subsystem for Linux). Ensure you have the necessary environment configured.
-
-- Windows:
-  - Use `run.cmd` (if provided) or run via PowerShell/CMD accordingly.
+  - If needed, edit `MODULE_PATH` inside `run.bat` to point to your JavaFX SDK (or `%SCRIPT_DIR%lib` for local libs).
 
 ---
 
-## Requirements
+## ✅ Requirements
 
-- Java 17 or later installed.
-- A graphical environment (X11/Wayland on Linux). Not supported in headless mode.
+- Java 17+ installed.
+- A graphical environment (X11/Wayland on Linux). Headless mode is not supported.
 
 ---
 
-## Project Structure
+## 🗂️ Project Structure
 
 - MemeHero.jar
 - run.sh
-- lib/ (JavaFX libraries already included and referenced by the launcher)
+- run.bat
+- lib/ (optional JavaFX libraries if you choose local setup)
 
 ---
 
-## Notes
+## 📎 Notes
 
-- No Maven/Gradle was used; dependencies are managed locally.
+- No Maven/Gradle; dependencies are managed locally.
