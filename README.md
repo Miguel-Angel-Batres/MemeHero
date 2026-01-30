@@ -2,7 +2,7 @@
 
 MemeHero is a Guitar Hero–style rhythm game built entirely in Java without Maven or Gradle. It ships as a JAR with a launcher script (run.sh) and uses JavaFX libraries.
 
-![MemeHero-Demo](./demo.gif)
+![MemeHero-Demo](./memeherotake.gif)
 
 > [!IMPORTANT]
 > This project is entirely in Spanish. Code, menus, and on-screen instructions are shown only in Spanish.
@@ -102,4 +102,3 @@ MemeHero is a Guitar Hero–style rhythm game built entirely in Java without Mav
 ## Notes
 
 - No Maven/Gradle was used; dependencies are managed locally.
-- For packaging per OS without scripts, consider jlink/jpackage with JavaFX
